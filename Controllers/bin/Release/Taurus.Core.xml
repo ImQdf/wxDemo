@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Taurus.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Taurus.Core.RouteConfig">
+            <summary>
+            路由系统
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.RouteConfig.RouteMode">
+            <summary>
+            配置模式【值为0,1或2】[默认为1]
+            值为0：匹配{Action}/{Para}
+            值为1：匹配{Controller}/{Action}/{Para}
+            值为2：匹配{Module}/{Controller}/{Action}/{Para}
+            </summary>
+        </member>
+        <member name="T:Taurus.Core.Controller">
+            <summary>
+            the base of Controller
+            <para>控制器基类</para>
+            </summary>
+        </member>
+        <member name="F:Taurus.Core.Controller.CancelInvoke">
+            <summary>
+            to stop invoke method
+            <para>取消继续调用事件（可以在重载BeforeInvoke方法内使用）</para>
+            </summary>
+        </member>
+        <member name="F:Taurus.Core.Controller.CancelLoadHtml">
+            <summary>
+            to stop load view html
+            <para>是否取消加载Html文件</para>
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.Controller.WriteLog(System.String)">
+            <summary>
+            Write log to txt
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.Controller.CheckToken">
+            <summary>
+            if the result is false will stop invoke method
+            <para>检测授权是否通过</para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taurus.Core.Controller.IsClick(System.String)">
+            <summary>
+            is button event
+            <para>是否点击了某事件</para>
+            </summary>
+            <param name="btnName">button name<para>按钮名称</para></param>
+        </member>
+        <member name="P:Taurus.Core.Controller.View">
+            <summary>
+            the View Engine
+            <para>视图模板引擎</para>
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.ControllerType">
+            <summary>
+            Controller Type
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.Action">
+            <summary>
+            Action value
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.Para">
+            <summary>
+            Para value
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.PageIndex">
+            <summary>
+            request["page"]
+            <para>datagrid分页的第N页</para>
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.PageSize">
+            <summary>
+            request["rows"]
+            <para>datagrid分页的每页N条</para>
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.Sort">
+            <summary>
+            request["sort"]
+            <para>排序字段名</para>
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.Controller.Order">
+            <summary>
+            request["order"]
+            <para>排序类型（升或降） default desc</para>
+            </summary>
+        </member>
+        <member name="F:Taurus.Core.Controller.queryCache">
+            <summary>
+            缓存参数值
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.Controller.Query``1(System.Enum)">
+            <summary>
+            Get Request value
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.Controller.Write(System.String)">
+            <summary>
+            Write String result
+            <para> 输出原始msg的数据</para>
+            </summary>
+            <param name="msg">message<para>消息内容</para></param>
+        </member>
+        <member name="M:Taurus.Core.Controller.Write(System.String,System.Boolean)">
+            <summary>
+            Write Json result
+            <para>输出Json格式的数据</para>
+            </summary>
+            <param name="isSuccess">success or not</param>
+        </member>
+        <member name="M:Taurus.Core.Controller.Write(System.Object)">
+            <summary>
+            Write Json result
+            <para>传进对象时，会自动将对象转Json</para>
+            </summary>
+            <param name="obj">any obj is ok<para>对象或支持IEnumerable接口的对象列表</para></param>
+        </member>
+        <member name="M:Taurus.Core.Controller.GetEntity``1">
+            <summary>
+            Get entity from post form
+            <para>从Post过来的数据中获得实体类型的转换</para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Taurus.Core.Controller.GetJson">
+            <summary>
+            获取Get或Post的数据并转换为Json格式。
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Taurus.Core.Controller.CheckFormat(System.String,System.String[])”忽略有格式错误的 XML 注释 -->
+        <member name="T:Taurus.Core.ViewEngine">
+            <summary>
+            视图引擎
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.ViewEngine.Create(System.String,System.String)">
+            <summary>
+            创建视图对象
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.ViewEngine.Create(System.String)">
+            <summary>
+            创建视图对象
+            </summary>
+            <param name="path">相对路径，如：/abc/cyq/a.html</param>
+        </member>
+        <member name="M:Taurus.Core.ViewEngine.GetSharedView(System.String)">
+            <summary>
+            获取Shared文件View
+            </summary>
+            <param name="htmlName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taurus.Core.HttpResponseFilter">
+            <summary>
+            处理本项目部署成子应用程序时，多了一个目录的问题。
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.HttpResponseFilter.#ctor(System.IO.Stream)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="stream">参数为：HttpContext.Current.Response.Filter</param>
+            <param name="replaceHtmlTextList">字典集合：key为被替换正则表达式,value为替换的字符串</param>
+        </member>
+        <member name="T:Taurus.Core.InvokeLogic">
+            <summary>
+            反射Controller类
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.InvokeLogic.GetControllers">
+            <summary>
+            获取控制器
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.InvokeLogic.GetType(System.String)">
+            <summary>
+            通过className类名获得对应的Controller类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Taurus.Core.InvokeLogic.CheckTokenMethod">
+            <summary>
+            全局CheckToken方法
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.InvokeLogic.BeforeInvokeMethod">
+            <summary>
+             全局BeforeInvoke方法
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.InvokeLogic.EndInvokeMethod">
+            <summary>
+             全局EndInvokeMethod方法
+            </summary>
+        </member>
+        <member name="P:Taurus.Core.QueryTool.IsUseUISite">
+            <summary>
+            是否使用子目录部署网站
+            </summary>
+        </member>
+        <member name="M:Taurus.Core.QueryTool.FilterValue(System.String)">
+            <summary>
+            过滤一般的字符串
+            </summary>
+            <param name="strFilter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Taurus.Core.SessionHandler">
+            <summary>
+            实现IHttpModule中使用Session
+            </summary>
+        </member>
+        <member name="T:Taurus.Core.UrlRewrite">
+            <summary>
+            权限检测模块
+            </summary>
+        </member>
+    </members>
+</doc>

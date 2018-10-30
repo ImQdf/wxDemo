@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<meta name="format-detection" content="telephone=no, email=no"/>
+		<meta charset="UTF-8">
+		<title>支付成功</title>
+	</head>
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/home.css">
+	<style>
+		.paysuccess_img{
+			width: 80px;
+			height: 80px;
+			display: block;
+			margin: 120px auto 20px;
+		}
+		.paytrue{
+			font-size: 16px;
+			text-align: center;
+			font-weight: bold;
+		}
+		.paymoney{
+			font-size: 14px;
+			text-align: center;
+			margin-top:20px ;
+		}
+		.paybutton{
+			width: 250px;
+			height: 40px;
+			border: none;
+			font-size: 15px;
+			background: #5ab41e;
+			color: white;
+			display: block;
+			margin: 20px auto 0;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+	</style>
+	<body>
+		<header class="aui-header-default aui-header-fixed aui-header-bg">
+			<a href="javascript:history.back(-1)" class="aui-header-item">
+				<i class="aui-icon aui-icon-back-white"></i>
+			</a>
+			<div class="aui-header-center aui-header-center-clear">
+				<div class="aui-header-center-logo">
+					<div class="aui-car-white-Typeface">支付成功</div>
+				</div>
+			</div>
+		</header>
+		<img src="img/payok.png" class="paysuccess_img"/>
+		<div class="paytrue">支付成功</div>
+		<div class="paymoney">付款金额：399元</div>
+		<a href="mine.html">
+		<button class="paybutton">完成</button>
+		</a>
+	</body>
+</html>

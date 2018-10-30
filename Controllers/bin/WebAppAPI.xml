@@ -1,0 +1,1266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Controllers</name>
+    </assembly>
+    <members>
+        <member name="M:Controllers.SysCrmWeb.SysCrmFinancialAPIController.ApplyWithdrawal">
+            <summary>
+            申请提现
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmFinancialAPIController.GetCash">
+            <summary>
+            获取可提现的金额
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmFinancialAPIController.CrmGetDrawalRecordList">
+            <summary>
+            提现申请列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmFinancialController.withdrawCashApply">
+            <summary>
+            申请提现
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmFinancialController.withdrawCashList">
+            <summary>
+            提现列表
+            </summary>
+        </member>
+        <member name="T:Controllers.SysCrmWeb.SysCrmOrderAPIController">
+            <summary>
+            CRM后台API-订单类
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmOrderAPIController.GetCrmOrderList">
+            <summary>
+            获取订单列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmOrderAPIController.GetCrmOrderOne">
+            <summary>
+            查询单个订单
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmUserAPIController.GetCrmUserList">
+            <summary>
+            会员列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysCrmWeb.SysCrmUserAPIController.GetCrmUserOne">
+            <summary>
+            查询某个用户信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WebShareholder.SysCrmHomeController.login">
+            <summary>
+            股东首页
+            </summary>
+        </member>
+        <member name="M:Controllers.WebShareholder.SysCrmHomeController.index">
+            <summary>
+            股东首页，访问路径 /ShareholderWeb/index
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysChickGreetAPIController.GetChickGreetOne">
+            <summary>
+            查询单个信息
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysChickGreetAPIController.UpdateChickGreet">
+            <summary>
+            修改/添加
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysHomeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.Default">
+            <summary>
+            重写默认页面；当前只输入一级路由时自动跳转到Default,再转发到index
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.login">
+            <summary>
+            后台首页
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.index">
+            <summary>
+            后台首页
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.GetUserTotal">
+            <summary>
+            获取已关注的用户总数
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.GetUserYesterdayAdd">
+            <summary>
+            获取昨日新增已关注用户总数
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.GetFoundersTotal">
+            <summary>
+            创始人总数
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.GetMerchantsTotal">
+            <summary>
+            商家总数
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.GetOrderTotal">
+            <summary>
+            订单总数
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.GetYesterdayOrderTotal">
+            <summary>
+            昨日新增订单数
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.WaitSendOrderTotal">
+            <summary>
+            待发货 是否道具?是:1;否:0
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeController.btnAdd">
+            <summary>
+            【不使用此方法】
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysActivityAPIController">
+            <summary>
+            活动-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysActivityAPIController.GetActivityList">
+            <summary>
+            查询列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysActivityAPIController.GetActivityOne">
+            <summary>
+            获取单条数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysActivityAPIController.UpdateOrAddActivity">
+            <summary>
+            修改/添加
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysActivityAPIController.DelActivity">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysActivityAPIController.SetStatus">
+            <summary>
+            设置获取开启/关闭
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysHomeAPIController">
+            <summary>
+            首页-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeAPIController.AdminLogin">
+            <summary>
+            登陆
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysHomeAPIController.UpdatePwd">
+            <summary>
+            修改密码
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysCommissionAPIController">
+            <summary>
+            流水-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysCommissionAPIController.GetCommissionList">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysCouponAPIController">
+            <summary>
+            优惠券-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysCouponAPIController.GetCouponsOfflineOne">
+            <summary>
+            查询单个优惠券信息
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysCouponAPIController.UpdateCouponsOffline">
+            <summary>
+            修改/添加优惠券
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysDrawalRecordAPIController">
+            <summary>
+            后台-提现API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysDrawalRecordAPIController.GetDrawalRecordList">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysDrawalRecordAPIController.GetDrawalRecordOne">
+            <summary>
+            查询单条数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysDrawalRecordAPIController.UpdateStatu">
+            <summary>
+            审核通过/驳回
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysMaterialAPIController">
+            <summary>
+            素材图片库-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysMaterialAPIController.GetMaterialList">
+            <summary>
+            查询
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysMaterialAPIController.GetMaterialOne">
+            <summary>
+            查询单条数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysMaterialAPIController.AddMaterial">
+            <summary>
+            添加
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysMaterialAPIController.UpdateMaterial">
+            <summary>
+            修改信息
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysMaterialAPIController.DeleteMaterial">
+            <summary>
+            批量删除用户信息
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysOrderAPIController">
+            <summary>
+            订单-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysOrderAPIController.GetOrderList">
+            <summary>
+            订单列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysOrderAPIController.GetOrderOne">
+            <summary>
+            查询单个订单
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysOrderAPIController.SendPro">
+            <summary>
+            发货
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysOrderAPIController.UpdateOrder">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysOrderAPIController.DeleteOrder">
+            <summary>
+            删除订单
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysOrderAPIController.ExceptToExcel">
+            <summary>
+            导出未发货的明细
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysShipApplysAPIController">
+            <summary>
+            订单发货记录-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysShipApplysAPIController.GetShipApplyList">
+            <summary>
+            订单发货记录
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysShipApplysAPIController.SendPro">
+            <summary>
+            发货
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysShipApplysAPIController.ExceptToExcel">
+            <summary>
+            导出未发货的明细
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysPrizeAPIController">
+            <summary>
+            奖品-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysPrizeAPIController.GetPrizeList">
+            <summary>
+            奖品列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysPrizeAPIController.GetPrizeOne">
+            <summary>
+            单条数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysPrizeAPIController.UpdatePrize">
+            <summary>
+            修改奖品
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysPrizeAPIController.AddPrize">
+            <summary>
+            添加奖品
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysPrizeAPIController.DelPrize">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysProductAPIController">
+            <summary>
+            商品-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysProductAPIController.GetProductList">
+            <summary>
+            商品列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysProductAPIController.GetProductOne">
+            <summary>
+            查询单个商品详情
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysProductAPIController.UpdateOrAddProduct">
+            <summary>
+            修改商品信息
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysProductAPIController.DeleteProduct">
+            <summary>
+            删除商品
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysSignPirzApiController.GetSignPirzList">
+            <summary>
+            签到奖励数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysSignPirzApiController.GetSignPirzOne">
+            <summary>
+            单条签到奖励数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysSignPirzApiController.InsertOrUpdSignPirz">
+            <summary>
+            添加或修改
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysSignPirzApiController.DelSignPirz">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysWritInfoApiController.GetWritInfoList">
+            <summary>
+            查询列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysWritInfoApiController.GetWritInfoOne">
+            <summary>
+            获取单条数据
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysWritInfoApiController.UpdateOrAddWritInfo">
+            <summary>
+            修改/添加
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysWritInfoApiController.DelWritInfo">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.UploadImgAPIController">
+            <summary>
+            后台-图片上传API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.UploadImgAPIController.UploadImg">
+            <summary>
+            上传图片
+            </summary>
+        </member>
+        <member name="T:Controllers.SysWeb.SysUserAPIController">
+            <summary>
+            会员-----后台API
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.GetUserList">
+            <summary>
+            会员列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.GetActiveUserList">
+            <summary>
+            活跃会员列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.GetUserOne">
+            <summary>
+            查询某个用户信息
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.UpdateUser">
+            <summary>
+            修改用户信息
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.SetFounder">
+            <summary>
+            设置创始人
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.DeleteUser">
+            <summary>
+            删除用户
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.ExceptToExcel">
+            <summary>
+            导出会员明细
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysUserAPIController.ExActiveUserToExcel">
+            <summary>
+            导出活跃会员明细
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.couponList">
+            <summary>
+            优惠券列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.couponDetail">
+            <summary>
+            优惠券修改
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.activityList">
+            <summary>
+            活动列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.activityDetail">
+            <summary>
+            活动修改
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.prizeList">
+            <summary>
+            奖品列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.prizeDetail">
+            <summary>
+            奖品修改
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.prizeAdd">
+            <summary>
+            奖品添加
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.signPirzList">
+            <summary>
+            签到奖励列表
+            </summary>
+        </member>
+        <member name="M:Controllers.SysWeb.SysManagerController.signPirzDetail">
+            <summary>
+            签到奖励详情
+            </summary>
+        </member>
+        <member name="T:Controllers.Web.ChickAPIController">
+            <summary>
+            用户鸡操作api
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.Feeding">
+            <summary>
+            喂食操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.Traveling">
+            <summary>
+            出行操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.Receiveing">
+            <summary>
+            领鸡操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.Successing">
+            <summary>
+            收取成熟鸡苗
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.ReceiveEgg">
+            <summary>
+            领取金蛋操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.FriendsFeeding">
+            <summary>
+            好友喂食操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.ChickAPIController.GetGreetOne">
+            <summary>
+            随机获取一条问候语
+            [前端一次性渲染一个集合js全局变量]可以考虑
+            </summary>
+        </member>
+        <member name="T:Controllers.Web.OrderAPIController">
+            <summary>
+            订单操作Api
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.OrderAPIController.SumbitOrder">
+            <summary>
+            提交订单操作/实物购买/虚拟物品购买
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.OrderAPIController.PayOrder">
+            <summary>
+            支付订单操作[佣金支付/游戏币支付]
+            【统一叫游戏币支付,优先扣除余额部分】...
+            实物购买/虚拟物品购买
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.OrderAPIController.CancelOrder">
+            <summary>
+            取消下单操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.OrderAPIController.FinishOrder">
+            <summary>
+            确认收货操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.OrderAPIController.DeleteOrder">
+            <summary>
+            删除订单操作
+            </summary>
+        </member>
+        <member name="T:Controllers.Web.UserAddressAPIController">
+            <summary>
+            用户地址API
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.UpdateUserAddress">
+            <summary>
+            修改用户地址
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.InsertUserAddress">
+            <summary>
+            增加用户地址
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.DeleteUserAddress">
+            <summary>
+            删除用户地址
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.GetFullPathName(System.Int32)">
+            <summary>
+            根据地区编号获取省市县名称
+            </summary>
+            <param name="regionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.GetAllProvinces">
+            <summary>
+            获取全部省
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.GetCity">
+            <summary>
+            获取省下面的市
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.GetCounty">
+            <summary>
+            获取市下面的县
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAddressAPIController.GetFullPath">
+            <summary>
+            获取省市县路径
+            </summary>
+        </member>
+        <member name="T:Controllers.Web.UserAPIController">
+            <summary>
+            用户API
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAPIController.ApplyShip">
+            <summary>
+            申请再次发货
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAPIController.ApplyDrawal">
+            <summary>
+            申请提现
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAPIController.MyFriend">
+            <summary>
+            加载更多我的好友[扩展]
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAPIController.UpdateAutoAddress">
+            <summary>
+            更新自动获取的地理位置
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.UserAPIController.IsEggReward">
+            <summary>
+            判断是否有蛋
+            </summary>
+        </member>
+        <member name="T:Controllers.Web.BaseUIController">
+            <summary>
+            入口基类
+            </summary>
+        </member>
+        <member name="F:Controllers.Web.BaseUIController._domianName">
+            <summary>
+            API域名
+            </summary>
+        </member>
+        <member name="P:Controllers.Web.BaseUIController.userModel">
+            <summary>
+            当前用户
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.BaseUIController.CheckUser">
+            <summary>
+            检查用户是否登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Controllers.Web.BaseUIController.UserId">
+            <summary>
+            当前登录Id
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.BaseUIController.LoadWxJSSDKPara">
+            <summary>
+            加载微信JSSDK参数
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.BaseUIController.LoadSharePara">
+            <summary>
+            加载微信分享参数
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.BaseUIController.IsSubscribe">
+            <summary>
+            加载是否关注横幅
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.BaseUIController.RedirectUrl(System.String)">
+            <summary>
+            重定向
+            </summary>
+        </member>
+        <member name="T:Controllers.Web.WebController">
+            <summary>
+            web文件中html控制器
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.index">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.ThirdIndex">
+            <summary>
+            帮助好友喂食
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.View_OnForeachProduct(System.String,CYQ.Data.Tool.MDictionary{System.String,System.String},System.Int32)">
+            <summary>
+            获取商城列表
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.productMoive">
+            <summary>
+            吃鸡页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.product">
+            <summary>
+            产品详情页
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.order">
+            <summary>
+            订单预下单页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.payment">
+            <summary>
+            支付页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.paysuccess">
+            <summary>
+            付款成功页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.selectaddress">
+            <summary>
+            选择地址
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.myaddress">
+            <summary>
+            我的地址页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.addmyaddress">
+            <summary>
+            添加/修改 地址详情
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.mine">
+            <summary>
+            个人中心
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.myorder">
+            <summary>
+            我的订单列表页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.mymembers">
+            <summary>
+            我的好友
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.qrcode">
+            <summary>
+            我的二维码
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.deliver">
+            <summary>
+            再次申请发货
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.album">
+            <summary>
+            相册
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.strategy">
+            <summary>
+            攻略
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.mylogistics">
+            <summary>
+            物流信息页面
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.mywallet">
+            <summary>
+            我的钱包/鸡金
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.coupon">
+            <summary>
+            优惠券
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.couponed">
+            <summary>
+            已使用优惠券
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.couponeddetail">
+            <summary>
+            已使用优惠券明细
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.scancomplete">
+            <summary>
+            验证优惠券操作
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.servicetranslation">
+            <summary>
+            售后服务
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.deliverList">
+            <summary>
+            用户申请发货列表
+            </summary>
+        </member>
+        <member name="M:Controllers.Web.WebController.GetBBSNotice">
+            <summary>
+            广播滚屏测试方法
+            </summary>
+        </member>
+        <member name="F:Controllers.WeiXinApiController.weiXinLogic">
+            <summary>
+            微信逻辑层类
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.BeforeInvoke(System.String)">
+            <summary>
+            作为API使用时，CancelLoadHtml=true;
+            </summary>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Controllers.WeiXinApiController._domianName">
+            <summary>
+            API域名
+            </summary>
+        </member>
+        <member name="F:Controllers.WeiXinApiController._cacheTime">
+            <summary>
+            缓存过期时间
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.addCookie(System.Int32)">
+            <summary>
+            添加一个月cookie
+            </summary>
+            <param name="userId"></param>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.RemoveCookie">
+            <summary>
+            删除cookie入口
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.WxRequest">
+            <summary>
+            微信消息接口对接;wxinxinapi/WxRequest
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.GetOAuthUrl">
+            <summary>
+            获取微信授权登录地址
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.WxOAuth">
+            <summary>
+            根据code拉取授权信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.WxPaySubmit">
+            <summary>
+            微信支付[用于在线支付]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.NotifyUrl">
+            <summary>
+            支付回调地址[用于在线支付]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.WxPayOnline">
+            <summary>
+            微信支付[用于充值]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.NotifyUrlOnline">
+            <summary>
+            支付回调地址[用于充值]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.GetJSSDK">
+            <summary>
+            获取jssdk参数
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.GetMaterialList">
+            <summary>
+            获取素材列表
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.CreateMenu">
+            <summary>
+            创建菜单按钮
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.SendKfMessage">
+            <summary>
+            发送客服消息[提供给后台使用]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.SchemeRefund">
+            <summary>
+            微信订单退款接口[需要证书]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.EnterprisePay">
+            <summary>
+            企业付款接口[需要证书]
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.OrderQuery">
+            <summary>
+            查询订单
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.specialUpdate">
+            <summary>
+            特殊更新
+            2018-05-07已使用；此方法不可随意使用；没有区分成为推广大使,下级注册时间
+            已过时
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.CheckHttps">
+            <summary>
+            检查服务器证书是否有效
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.test">
+            <summary>
+            并发测试使用
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.VirtualData(System.Int32)">
+            <summary>
+            虚拟数据测试添加
+            </summary>
+        </member>
+        <member name="M:Controllers.WeiXinApiController.UpdateUserCheickenNumOver">
+            <summary>
+            20180705
+            因BUG导致用户CheickenNumOver值未更新
+            使用该方法进行数据更新
+            </summary>
+        </member>
+        <member name="M:Controllers.DefaultController.CheckToken(Taurus.Core.IController,System.String)">
+            <summary>
+            权限验证
+            </summary>
+            <param name="controller"></param>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Controllers.DefaultController.BeforeInvoke(Taurus.Core.IController,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="controller"></param>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.qrcode">
+            <summary>
+            我的二维码
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.scancomplete">
+            <summary>
+            验证优惠券
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.couponed">
+            <summary>
+            已使用优惠券
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.couponeddetail">
+            <summary>
+            已使用优惠券明细
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.mylogistics">
+            <summary>
+            物流信息页面
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.UserSign">
+            <summary>
+            用户签到
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.GetCurrDay">
+            <summary>
+            获取用户已连续签到天数
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.FriendsFeeding">
+            <summary>
+            好友喂食操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenApiController.FriendsFeedList">
+            <summary>
+            好友列表[喂食]
+            </summary>
+        </member>
+        <member name="T:Controllers.WxOpen.WxOpenNewApiController">
+            <summary>
+            微信小程序接口
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.BeforeInvoke(System.String)">
+            <summary>
+            作为API使用时，CancelLoadHtml=true;
+            </summary>
+            <param name="methodName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Controllers.WxOpen.WxOpenNewApiController.userModel">
+            <summary>
+            当前用户实体
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.CheckToken">
+            <summary>
+            权限效验
+            [每次效验都查询用户信息太频繁,应重新定义凭证验证规则/用户数据刷新]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Controllers.WxOpen.WxOpenNewApiController._domianName">
+            <summary>
+            API域名
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.jm">
+            <summary>
+            解密TOKEN测试方法
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetUserInfo(System.Int64)">
+            <summary>
+            根据id获取用户信息
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.WxOpenLogic">
+            <summary>
+            用户登录通过code拉取用户判断是否已注册
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.WxOpenCheck">
+            <summary>
+            效验用户并自动注册
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.WxOpenPay">
+            <summary>
+            微信小程序支付
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.WxOpenPayNotifyUrl">
+            <summary>
+            微信小程序支付回调
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetBBSNotice">
+            <summary>
+            获取index广播通知
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetIndexApi">
+            <summary>
+            index页面
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMywallet">
+            <summary>
+            我的钱包/鸡金 页面
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.ApplyDrawal">
+            <summary>
+            申请提现
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetAlbum">
+            <summary>
+            album页面
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMyMembers">
+            <summary>
+            获取我的好友
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMyAddress">
+            <summary>
+            获取我的收货地址
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMyAddressDetail">
+            <summary>
+            获取我的收货地址详情
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetCoupon">
+            <summary>
+            获取我的优惠券
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMyOrder">
+            <summary>
+            获取我的订单
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetProductDetail">
+            <summary>
+            获取产品详情
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetOrder">
+            <summary>
+            获取预下单页面信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetPayment">
+            <summary>
+            获取支付页面信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetShareInfo">
+            <summary>
+            获取分享信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMine">
+            <summary>
+            获取个人信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetMineInfo">
+            <summary>
+            获取个人中心信息
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.IsEggReward">
+            <summary>
+            判断是否有金蛋
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.Receiveing">
+            <summary>
+            领鸡操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.Feeding">
+            <summary>
+            喂食操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.Traveling">
+            <summary>
+            出行操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.ReceiveEgg">
+            <summary>
+            砸蛋领奖操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.Successing">
+            <summary>
+            收取成熟鸡苗
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.SumbitOrder">
+            <summary>
+            提交订单操作/实物购买/虚拟物品购买
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.PayOrder">
+            <summary>
+            支付订单操作[佣金支付/游戏币支付]
+            【统一叫游戏币支付,优先扣除余额部分】...
+            实物购买/虚拟物品购买
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.CancelOrder">
+            <summary>
+            取消下单操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.FinishOrder">
+            <summary>
+            确认收货操作
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.UpdateUserAddress">
+            <summary>
+            修改用户地址
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.InsertUserAddress">
+            <summary>
+            增加用户地址
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.DeleteUserAddress">
+            <summary>
+            删除用户地址
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetAllProvinces">
+            <summary>
+            获取全部省
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetCity">
+            <summary>
+            获取省下面的市
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetCounty">
+            <summary>
+            获取市下面的县
+            </summary>
+        </member>
+        <member name="M:Controllers.WxOpen.WxOpenNewApiController.GetFullPath">
+            <summary>
+            获取省市县路径
+            </summary>
+        </member>
+    </members>
+</doc>

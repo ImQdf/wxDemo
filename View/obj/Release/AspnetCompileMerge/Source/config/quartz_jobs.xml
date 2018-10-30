@@ -1,0 +1,45 @@
+﻿<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" 
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     version="2.0">
+
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+
+  <schedule>
+    <job>
+      <name>ServiceStatusJob</name>
+      <group>ServiceStatusJobGroup</group>
+      <description>服务者状态监听</description>
+      <job-type>Job.ServiceStatusJob, Job</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <simple>
+        <name>ServiceStatusJobTrigger</name>
+        <group>ServiceStatusJobTriggerGroup</group>
+        <description>服务者状态监听</description>
+        <job-name>ServiceStatusJob</job-name>
+        <job-group>ServiceStatusJobGroup</job-group>
+        <misfire-instruction>SmartPolicy</misfire-instruction>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300000</repeat-interval>
+      </simple>
+    </trigger>
+
+
+
+    <!--<trigger>
+      <cron>
+        <name>sampleSimpleTrigger2</name>
+        <group>sampleSimpleGroup2</group>
+        <job-name>sample2Job</job-name>
+        <job-group>sample2Group</job-group>
+        <start-time>2018-01-04T00:00:00+08:00</start-time>
+        <cron-expression>0/3 * * * * ?</cron-expression>
+      </cron>
+    </trigger>-->
+    
+  </schedule>
+</job-scheduling-data>

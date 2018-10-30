@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>后台API</title>
+    <script src="/JavaScript/jquery-1.6.4.min.js"></script>
+</head>
+<body>
+    <input type="button" value="调用API" onclick="submitAPI();" />
+    <div id="json"></div>
+
+    <script>
+     
+        var requestdata =
+        {
+            AddressId:1,
+            UserId: 2,
+            ShipTo: '修改',
+            //Address: '22222修改',
+            CellPhone: '13812345678',
+            //IsDefault:1
+            //id:"123"
+        };
+        var OrderData =
+        {
+            UserId: 2,
+            AddressId: 1,
+            ProductId: 3,
+            Quantity: 1,
+            PayTypeId:1,
+        };
+
+        function submitAPI() {
+            $.ajax({
+                url: '/OrderAPI/SumbitOrder',
+                type: 'POST',
+                data: OrderData,
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                //async: false,
+                //cache: false,
+                dataType: "json",
+                //contentType: false,
+                //processData: false,
+                success: function (returndata) {
+                    $("#json").html(JSON.stringify(returndata));
+                    console.info(returndata);
+                  
+                },
+                error: function (returndata) {
+                    alert(returndata);
+                }
+            });
+        }
+        function submitAPI2(url) {
+            $.ajax({
+                url: '/WeiXin/GetOAuthUrl',
+                type: 'POST',
+                data: { "returnurl": url },
+                contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                //async: false,
+                //cache: false,
+                dataType: "json",
+                //contentType: false,
+                //processData: false,
+                success: function (returndata) {
+                    $("#json").html(JSON.stringify(returndata));
+                    console.info(returndata);
+                },
+                error: function (returndata) {
+                    alert(returndata);
+                }
+            });
+        }
+    
+    </script>
+
+</body>
+</html>

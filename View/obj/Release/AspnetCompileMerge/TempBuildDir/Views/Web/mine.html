@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no, email=no"/>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body style="background:#f1f2f6">
+	<section class="aui-me-content">
+		<div class="aui-me-content-box">
+			<div class="aui-me-content-info"></div>
+			<div class="aui-me-content-list">
+				<div class="aui-me-content-item">
+					<div class="aui-me-content-item-head">
+						<div class="aui-me-content-item-img">
+							<img src="img/sf-1(2).jpg" alt="">
+						</div>
+						<div class="aui-me-content-item-title">用户名称</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aui-me-content-order">
+			<a href="myorder.html" class="aui-well aui-fl-arrow">
+				<div class="aui-well-bd">我的订单</div>
+				<div class="aui-well-ft">查看全部</div>
+			</a>
+		</div>
+		<section class="aui-grid-content">
+			<div class="aui-grid-row">
+				<a href="myorder.html" class="aui-grid-row-item">
+					<i class="aui-icon-large aui-icon-large-sm aui-icon-wallet"></i>
+					<p class="aui-grid-row-label">待付款</p>
+				</a>
+				<a href="myorder.html" class="aui-grid-row-item">
+					<i class="aui-icon-large aui-icon-large-sm aui-icon-goods"></i>
+					<p class="aui-grid-row-label">待发货</p>
+				</a>
+				<a href="myorder.html" class="aui-grid-row-item">
+					<i class="aui-icon-large aui-icon-large-sm aui-icon-receipt"></i>
+					<p class="aui-grid-row-label">待收货</p>
+				</a>
+				<a href="myorder.html" class="aui-grid-row-item">
+					<i class="aui-icon-large aui-icon-large-sm aui-icon-evaluate"></i>
+					<p class="aui-grid-row-label">待评价</p>
+				</a>
+				<a href="myorder.html" class="aui-grid-row-item">
+					<i class="aui-icon-large aui-icon-large-sm aui-icon-refund"></i>
+					<p class="aui-grid-row-label">退货退款</p>
+				</a>
+			</div>
+			<div class="aui-dri"></div>
+			<div class="aui-me-content-order">
+				<a href="#" class="aui-well ">
+					<div class="aui-well-bd">我的会员</div>
+					<!--<div class="aui-well-ft">查看全部</div>-->
+				</a>
+			</div>
+		</section>
+	</section>
+
+	<footer class="aui-footer-default aui-footer-fixed">
+		<a href="index.html" class="aui-footer-item">
+			<span class="aui-footer-item-icon aui-icon aui-footer-icon-home"></span>
+			<span class="aui-footer-item-text">首页</span>
+		</a>
+		<a href="mine.html" class="aui-footer-item aui-footer-active">
+			<span class="aui-footer-item-icon aui-icon aui-footer-icon-me"></span>
+			<span class="aui-footer-item-text">我的</span>
+		</a>
+	</footer>
+
+	<script type="text/javascript" src="themes/js/jquery.min.js"></script>
+	<script type="text/javascript">
+        $(function () {
+            //绑定滚动条事件
+            //绑定滚动条事件
+            $(window).bind("scroll", function () {
+                var sTop = $(window).scrollTop();
+                var sTop = parseInt(sTop);
+                if (sTop >= 44) {
+                    if (!$("#scrollSearchDiv").is(":visible")) {
+                        try {
+                            $("#scrollSearchDiv").slideDown();
+                        } catch (e) {
+                            $("#scrollSearchDiv").show();
+                        }
+                    }
+                }
+                else {
+                    if ($("#scrollSearchDiv").is(":visible")) {
+                        try {
+                            $("#scrollSearchDiv").slideUp();
+                        } catch (e) {
+                            $("#scrollSearchDiv").hide();
+                        }
+                    }
+                }
+            });
+        })
+	</script>
+</body>
+</html>
